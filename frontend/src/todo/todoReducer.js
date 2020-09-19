@@ -1,0 +1,19 @@
+const INITIAL_STATE ={description: '',list:[] }
+
+export default (state = INITIAL_STATE, action) => {
+    
+    switch(action.type){
+        case 'DESCRIPTION_CHANCED':
+            return { ...state, description: action.payload}
+
+        case 'TODO_SEARCHED':
+            console.log(action.payload.data)
+            return { ...state, list: action.payload} 
+
+        case 'TODO_CLEAR':
+            return  { ...state, description: ''}
+
+        default :
+            return state
+    }
+}

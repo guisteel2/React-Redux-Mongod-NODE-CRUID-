@@ -1,0 +1,12 @@
+.todoForm .btn{
+    margin: 3px;
+}
+
+.btnGrid .btn{
+    margin-left: 10px !important;
+}
+
+.markedAsDone{
+    text-decoration: line-through;
+    color: #777;
+}
